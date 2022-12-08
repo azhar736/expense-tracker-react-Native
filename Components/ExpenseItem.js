@@ -29,8 +29,8 @@ const ExpenseItem = ({ id, description, amount, date }) => {
           <Text style={[styles.textBase, styles.description]}>
             {description}
           </Text>
-          <Text style={styles.textBase}>{`${date.toLocaleDateString()} ${
-            daysArray[date.getDay()]
+          <Text style={styles.textBase}>{`${date?.toLocaleDateString()} ${
+            daysArray[date?.getDay()]
           }`}</Text>
         </View>
         <View style={styles.amountContainer}>
